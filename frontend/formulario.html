@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Película</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis:400,700"
-      rel="stylesheet"
-    />
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="/backend/public/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
+    <h1>Datos de la película</h1>
     <form class="card formulario">
         <input type="hidden" name="id">
-        <div>        
+        <div>
             <label for="title">Título </label>
             <p><input type="text" name="title" id="title" required></p>
         </div>
@@ -23,8 +25,8 @@
             <p><input type="number" name="rating" id="rating" required></p>
         </div>
         <div>
-        <label for="awards">Premios </label>
-        <p><input type="number" name="awards" id="awards" required></p>
+            <label for="awards">Premios </label>
+            <p><input type="number" name="awards" id="awards" required></p>
         </div>
         <div>
             <label for="release_date">Fecha de creación </label>
@@ -34,14 +36,18 @@
             <label for="length">Duración </label>
             <p><input type="number" name="length" id="length" required></p>
         </div>
-        
+
         <br>
-        <div class="action">
-            <button class="botonAgregar" >Editar</button>
-            <button class="botonAgregar">Crear</button>
-            <button class="botonBorrar">Eliminar</button>
+        <div class="card formulario">
+            <br>
+            <div class="action">
+                <button class="botonAgregar" id="botonAgregar">Crear</button>
+                <button class="botonAgregar" id="botonEditar">Editar</button>
+                <button class="botonBorrar" id="botonBorrar">Eliminar</button>
+            </div>
         </div>
     </form>
     <script src="js/formulario.js"></script>
 </body>
+
 </html>
